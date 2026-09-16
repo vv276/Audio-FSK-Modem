@@ -30,8 +30,8 @@ gcc rx.c -o rx.exe -lm
 1. C语言常量取地址报错：在写入WAV文件头时，宏定义的常量无法使用 & 取地址，通过引入局部临时变量分配到栈区内存后解决。
 2. Windows隐藏后缀名导致的编译失败：文件后缀被系统隐藏，导致出现 tx.c.c、rx.c.cs 等错误格式。通过开启“文件扩展名”显示并重命名，配合GCC编译器正确处理。
 
-[FSK误码率曲线](<img width="1653" height="993" alt="图片1" src="https://github.com/user-attachments/assets/04e78e01-26ea-45ef-b59d-63a2af775647" />
-)
+![FSK误码率曲线](https://github.com/user-attachments/assets/5895809e-3440-4e2e-9bec-b65993343475)
+
 实验数据与结论
    通过多组信噪比（SNR）仿真，测得系统误码率（BER）数据，绘制出关系曲线。
    · 抗噪平坦区（20dB 至 -14dB）：误码率均保持在 0.0000，系统稳定。
